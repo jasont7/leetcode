@@ -22,5 +22,5 @@ class Solution(object):
                 cur.next.next = ListNode(l2.val)
                 cur = cur.next.next
                 l1, l2 = l1.next, l2.next
-        cur.next = l1 or l2
+        cur.next = l1 or l2 
         return head.next
