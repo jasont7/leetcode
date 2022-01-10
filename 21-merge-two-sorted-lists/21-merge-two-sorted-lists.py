@@ -30,6 +30,6 @@ class Solution(object):
         while l2:
             cur.next = ListNode(l2.val)
             cur = cur.next
-            l2 = l2.next
+            l2 = l2.next 
         
         return head.next
