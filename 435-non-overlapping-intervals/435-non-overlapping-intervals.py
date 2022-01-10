@@ -1,10 +1,8 @@
 class Solution(object):
     def eraseOverlapIntervals(self, intervals):
-        intervals.sort(key=lambda i: i[1])
-        
-        A = []
-        for i in intervals:
-            if not len(A) or i[0] >= A[-1][1]:
-                A.append(i)
-        
-        return len(intervals) - len(A) 
+        cnt, end = 0, None
+        for i in sorted(intervals, key=lambda x: x[1]):
+            if cnt == 0 or i[0] >= end:
+                end = i[1]
+                cnt += 1
+        return len(intervals) - cnt
