@@ -22,14 +22,5 @@ class Solution(object):
                 cur.next.next = ListNode(l2.val)
                 cur = cur.next.next
                 l1, l2 = l1.next, l2.next
-        
-        while l1:
-            cur.next = ListNode(l1.val)
-            cur = cur.next
-            l1 = l1.next
-        while l2:
-            cur.next = ListNode(l2.val)
-            cur = cur.next
-            l2 = l2.next 
-        
+        cur.next = l1 or l2
         return head.next
