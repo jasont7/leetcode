@@ -7,4 +7,4 @@ class Solution(object):
             if not len(A) or i[0] >= A[-1][1]:
                 A.append(i)
         
-        return len(intervals) - len(A)
+        return len(intervals) - len(A) 
