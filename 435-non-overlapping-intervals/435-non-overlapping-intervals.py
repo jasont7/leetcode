@@ -5,4 +5,4 @@ class Solution(object):
             if cnt == 0 or i[0] >= end:
                 end = i[1]
                 cnt += 1
-        return len(intervals) - cnt
+        return len(intervals) - cnt 
