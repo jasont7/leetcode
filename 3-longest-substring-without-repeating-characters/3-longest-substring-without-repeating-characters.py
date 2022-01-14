@@ -6,7 +6,7 @@ class Solution:
         i, j = 0, 0
         while j < len(s):
             if s[j] not in seen:
-                curLen += 1 
+                curLen += 1
                 seen[s[j]] = j
                 j += 1
             else:
