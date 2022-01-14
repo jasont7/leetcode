@@ -11,5 +11,5 @@ class Solution:
             else:
                 maxLen = max(maxLen, curLen)
                 i = seen[s[j]] + 1
-                curLen = j - i
+                curLen = j - i 
         return max(maxLen, curLen)
