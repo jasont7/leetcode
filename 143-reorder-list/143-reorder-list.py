@@ -65,7 +65,7 @@ class Solution(object):
                 tail = b
                 b = b.next
 
-        a = dummy.next
+        a = dummy.next 
         return a
 
     
