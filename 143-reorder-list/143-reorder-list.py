@@ -3,7 +3,9 @@
 #     def __init__(self, val=0, next=None):
 #         self.val = val
 #         self.next = next
+
 class Solution(object):
+    
     def reorderList(self, head):
         """
         :type head: ListNode
@@ -26,15 +28,6 @@ class Solution(object):
         
         L1 = head
         L2 = self.reverse(t2)
-        
-        # while L1:
-        #     print(L1.val)
-        #     L1 = L1.next
-        # print('')
-        # while L2:
-        #     print(L2.val)
-        #     L2 = L2.next
-        
         return self.merge(L1, L2)
     
     def reverse(self, head):
@@ -67,8 +60,4 @@ class Solution(object):
 
         a = dummy.next 
         return a
-
-    
-    
-    
         
