@@ -9,7 +9,7 @@ class Solution(object):
         if not root:
             return root
             
-        tmp = root.left
+        tmp = root.left 
         root.left = root.right
         root.right = tmp
         
