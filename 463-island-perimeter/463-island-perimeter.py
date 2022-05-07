@@ -4,7 +4,7 @@ class Solution(object):
         P = 0
         
         def dfs(r, c):
-            nonlocal P 
+            nonlocal P
             
             grid[r][c] = -1 
             
