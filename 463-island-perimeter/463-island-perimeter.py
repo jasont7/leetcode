@@ -6,7 +6,7 @@ class Solution(object):
         def dfs(r, c):
             nonlocal P
             
-            grid[r][c] = -1 
+            grid[r][c] = -1
             
             if r+1 >= R or grid[r+1][c] == 0: P += 1
             if r-1 <  0 or grid[r-1][c] == 0: P += 1
