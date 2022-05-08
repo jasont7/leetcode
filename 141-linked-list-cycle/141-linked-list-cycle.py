@@ -11,7 +11,7 @@ class Solution(object):
         while node:
             if node in seen:
                 return True
-            seen[node] = 1
+            seen[node] = None
             node = node.next
             
         return False
