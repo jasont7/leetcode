@@ -12,7 +12,7 @@ class Solution(object):
         while fast_ptr:
             if slow_ptr == fast_ptr:
                 return True
-            if not fast_ptr.next: 
+            if not fast_ptr.next:
                 return False
             
             slow_ptr = slow_ptr.next
