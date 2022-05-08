@@ -5,13 +5,17 @@
 #         self.next = None
 class Solution(object):
     def hasCycle(self, head):
-        seen = {}
+        if not head: return False
         
-        node = head
-        while node:
-            if node in seen:
+        slow_ptr = head
+        fast_ptr = head.next
+        while fast_ptr:
+            if slow_ptr == fast_ptr:
                 return True
-            seen[node] = None
-            node = node.next
+            if not fast_ptr.next:
+                return False
             
+            slow_ptr = slow_ptr.next
+            fast_ptr = fast_ptr.next.next
+        
         return False
