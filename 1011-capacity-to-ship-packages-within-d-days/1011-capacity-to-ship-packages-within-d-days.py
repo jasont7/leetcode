@@ -1,6 +1,6 @@
 class Solution(object):
     def shipWithinDays(self, weights, D):
-        # checks if capacity can be shipped in D days
+        # checks if capacity can be shipped in D days 
         def feasible(capacity):
             days = 1
             total = 0
