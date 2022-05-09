@@ -10,7 +10,7 @@ class Solution(object):
                 left = mid + 1
         min_idx = left
         
-        # binary search to find target 
+        # binary search to find target
         if target <= nums[-1]:
             left, right = min_idx, len(nums)-1
         else:
