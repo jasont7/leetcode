@@ -4,20 +4,16 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
-
-from collections import deque
-
 class Solution(object):
     def levelOrder(self, root):
         if not root: return []
         
         res = []
-        q = deque()
-        q.append(root)
-        while q:
+        q = [root]
+        while len(q):
             level = []
             for _ in range(len(q)):
-                node = q.popleft()
+                node = q.pop(0)
                 if not node: continue
                 
                 level.append(node.val)
