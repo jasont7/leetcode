@@ -17,8 +17,7 @@ class Solution(object):
                 if not node: continue
                 
                 level.append(node.val)
-                q.append(node.left)
-                q.append(node.right)
+                q.extend([node.left, node.right])
             
             if len(level):
                 res.append(level)
