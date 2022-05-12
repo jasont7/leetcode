@@ -22,7 +22,6 @@ class Solution(object):
         while True:
             p_ancestors.append(curr)
             if curr == root: break
-            
             curr = parents[curr]
         
         curr = q
