@@ -1,13 +1,13 @@
 class Solution(object):
-    def insert(self, intervals, newInterval):
-        s, e = newInterval[0], newInterval[1]
+    def insert(self, intervals, newI):
         left, right = [], []
-        for i in intervals:
-            if i[1] < s:
-                left.append(i)
-            elif i[0] > e:
-                right.append(i)
+        for I in intervals:
+            if I[1] < newI[0]:
+                left.append(I)
+            elif I[0] > newI[1]:
+                right.append(I)
             else:
-                s = min(s, i[0])
-                e = max(e, i[1])
-        return left + [[s, e]] + right
+                newI[0] = min(newI[0], I[0])
+                newI[1] = max(newI[1], I[1])
+                
+        return left + [newI] + right
