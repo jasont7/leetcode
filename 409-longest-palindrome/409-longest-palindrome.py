@@ -10,7 +10,7 @@ class Solution(object):
         maxlen = 0
         for char in list(d):
             if d[char] >= 2:
-                evenlen = d[char] if d[char] % 2 == 0 else d[char] - 1
+                evenlen = (d[char] // 2) * 2
                 maxlen += evenlen
                 d[char] -= evenlen
                 if d[char] == 0: 
