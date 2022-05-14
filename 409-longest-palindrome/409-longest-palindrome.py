@@ -13,7 +13,7 @@ class Solution(object):
                 evenlen = d[char] if d[char] % 2 == 0 else d[char] - 1
                 maxlen += evenlen
                 d[char] -= evenlen
-                if d[char] == 0:
+                if d[char] == 0: 
                     d.pop(char)
         
         if len(d): maxlen += 1
