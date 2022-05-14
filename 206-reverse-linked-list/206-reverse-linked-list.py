@@ -8,7 +8,7 @@ class Solution(object):
         if not head: return head
         
         l, m, r = None, head, head.next
-        while m:
+        while m: 
             m.next = l
             l, m = m, r
             if r: r = r.next
