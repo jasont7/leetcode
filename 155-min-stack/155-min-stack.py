@@ -10,7 +10,7 @@ class MinStack(object):
 
     def push(self, val):
         if not self.head:
-            self.head = Node(val, val, None)
+            self.head = Node(val, val, None) 
         else:
             self.head = Node(val, min(val, self.head.min), self.head)
 
@@ -21,4 +21,4 @@ class MinStack(object):
         return self.head.val
 
     def getMin(self):
-        return self.head.min 
+        return self.head.min
