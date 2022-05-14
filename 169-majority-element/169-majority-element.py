@@ -3,4 +3,4 @@ class Solution(object):
         counts = collections.Counter(nums)
         for num in counts:
             if counts[num] > len(nums)//2: 
-                return num 
+                return num
