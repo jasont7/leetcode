@@ -21,4 +21,4 @@ class MinStack(object):
         return self.head.val
 
     def getMin(self):
-        return self.head.min
+        return self.head.min 
