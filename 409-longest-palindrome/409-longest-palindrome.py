@@ -10,9 +10,9 @@ class Solution(object):
         maxlen = 0
         for char in list(d):
             if d[char] >= 2:
-                
-                maxlen += d[char] if d[char] % 2 == 0 else d[char] - 1
-                d[char] -= d[char] if d[char] % 2 == 0 else d[char] - 1
+                evenlen = d[char] if d[char] % 2 == 0 else d[char] - 1
+                maxlen += evenlen
+                d[char] -= evenlen
                 if d[char] == 0:
                     d.pop(char)
         
