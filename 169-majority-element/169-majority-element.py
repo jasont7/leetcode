@@ -8,5 +8,5 @@ class Solution(object):
                 d[n] = 1
         
         for n in d:
-            if d[n] > len(nums)//2:
+            if d[n] > len(nums)//2: 
                 return n
