@@ -7,6 +7,6 @@ class Solution(object):
     def middleNode(self, head):
         slow, fast = head, head.next
         while True:
-            if not fast: return slow 
+            if not fast: return slow
             slow = slow.next
             fast = fast.next if not fast.next else fast.next.next
