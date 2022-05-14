@@ -3,24 +3,13 @@
 #     def __init__(self, val=0, next=None):
 #         self.val = val
 #         self.next = next
-
 class Solution(object):
-    
-#     # Recursive
-#     def reverseList(self, curr, prev=None):
-#         if curr is None:
-#             return prev
+    def reverseList(self, head):
+        if not head: return head
         
-#         new = curr.next
-#         curr.next = prev
-#         return self.reverseList(curr=new, prev=curr)
-    
-    
-    # Iterative
-    def reverseList(self, curr):
-        prev = None
-        while curr:
-            new = curr.next
-            curr.next = prev
-            prev, curr = curr, new
-        return prev
+        l, m, r = None, head, head.next
+        while m:
+            m.next = l
+            l, m = m, r
+            if r: r = r.next
+        return l
