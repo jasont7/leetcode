@@ -11,7 +11,7 @@ class Solution(object):
         for char in t:
             if char == '#' and t_stack:
                 t_stack.pop()
-            elif char != '#': 
+            elif char != '#':
                 t_stack.append(char)
         
         return s_stack == t_stack
