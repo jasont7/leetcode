@@ -10,7 +10,7 @@ class Solution(object):
         t_stack = []
         for char in t:
             if char == '#' and t_stack:
-                t_stack.pop() 
+                t_stack.pop()
             elif char != '#':
                 t_stack.append(char)
         
