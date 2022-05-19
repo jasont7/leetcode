@@ -2,11 +2,12 @@ import heapq
 
 class Solution(object):
     def kClosest(self, points, k):
-        def dist(p):
-            return p[0]**2 + p[1]**2
-        
         pq = []
         for p in points:
-            heapq.heappush(pq, (dist(p), p))
+            dist = p[0]**2 + p[1]**2
+            if len(pq) == k:
+                heapq.heappushpop(pq, (-dist, p))
+            else:
+                heapq.heappush(pq, (-dist, p))
         
-        return [heappop(pq)[1] for _ in range(k)]
+        return [p for (dist, p) in pq]
