@@ -7,10 +7,6 @@ class Solution(object):
         
         pq = []
         for p in points:
-            #print(-dist(p))
-            heapq.heappush(pq, (dist(p), p))  # neg bc min-heap
+            heapq.heappush(pq, (dist(p), p))
         
         return [heappop(pq)[1] for _ in range(k)]
-        # for i in range(k):
-        #     res.append(heappop(pq)[1])
-        # return res
