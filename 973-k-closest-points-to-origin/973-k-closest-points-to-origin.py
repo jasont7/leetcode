@@ -10,4 +10,4 @@ class Solution(object):
             else:
                 heapq.heappush(pq, (-dist, p))
         
-        return [p for (dist, p) in pq]
+        return [p for (dist, p) in pq] 
