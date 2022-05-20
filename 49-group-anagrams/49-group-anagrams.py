@@ -8,4 +8,4 @@ class Solution(object):
             else:
                 groups[sst] = [st]
         
-        return [groups[key] for key in groups] 
+        return [groups[key] for key in groups]
