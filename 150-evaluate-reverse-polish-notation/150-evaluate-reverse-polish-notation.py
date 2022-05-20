@@ -8,11 +8,11 @@ class Solution(object):
                 r = stack.pop()
                 l = stack.pop()
                 if t == '+':
-                    stack.append(int(l) + int(r))
+                    stack.append(l + r)
                 elif t == '-':
-                    stack.append(int(l) - int(r))
+                    stack.append(l - r)
                 elif t == '*':
-                    stack.append(int(l) * int(r))
+                    stack.append(l * r)
                 elif t == '/':
                     stack.append(int(float(l)/r))
         
