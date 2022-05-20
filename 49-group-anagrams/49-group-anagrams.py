@@ -1,7 +1,11 @@
-class Solution:
-    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+class Solution(object):
+    def groupAnagrams(self, strs):
         groups = {}
-        for s in strs:
-            ss = ''.join(sorted(s))
-            groups[ss] = groups[ss] + [s] if ss in groups else [s]
-        return groups.values()
+        for st in strs:
+            sst = ''.join(sorted(st))
+            if sst in groups:
+                groups[sst].append(st)
+            else:
+                groups[sst] = [st]
+        
+        return [groups[key] for key in groups]
