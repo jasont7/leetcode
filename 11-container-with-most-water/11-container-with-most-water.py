@@ -6,8 +6,7 @@ class Solution(object):
             area = (r-l) * min(height[l], height[r])
             maxarea = max(area, maxarea)
             
-            if height[l] < height[r]:
-                l += 1
-            else:
-                r -= 1
+            if height[l] < height[r]: l += 1
+            else: r -= 1
+                
         return maxarea
