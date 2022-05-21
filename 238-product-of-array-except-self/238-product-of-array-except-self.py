@@ -12,4 +12,4 @@ class Solution(object):
             res[i] = res[i] * p
             p = p * nums[i]
         
-        return res
+        return res 
