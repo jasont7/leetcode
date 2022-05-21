@@ -25,6 +25,6 @@ class Solution(object):
             for i in range(bottom, top-1, -1):
                 res.append(A[i][left])
             left += 1
-            if len(res) == n*m: break
+            if len(res) == n*m: break 
             
         return res
