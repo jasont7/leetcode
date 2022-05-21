@@ -2,14 +2,14 @@ class Solution(object):
     def productExceptSelf(self, nums):
         res = []
         
-        p = 1
+        pref = 1
         for i in range(0, len(nums)):
-            res.append(p)
-            p = p * nums[i]
+            res.append(pref)
+            pref = pref * nums[i]
         
-        p = 1
+        suf = 1
         for i in range(len(nums)-1, -1, -1):
-            res[i] = res[i] * p
-            p = p * nums[i]
+            res[i] = res[i] * suf
+            suf = suf * nums[i]
         
         return res 
