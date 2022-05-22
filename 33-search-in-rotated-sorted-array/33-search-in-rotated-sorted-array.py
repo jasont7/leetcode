@@ -3,7 +3,7 @@ class Solution(object):
         # binary search to find min element -> O(logn)
         left, right = 0, len(nums)-1
         while left < right:
-            mid = left + (right-left) // 2
+            mid = (right + left)//2
             if nums[mid] < nums[right]:
                 right = mid
             else:
@@ -16,7 +16,7 @@ class Solution(object):
         else:
             left, right = 0, min_idx-1
         while left < right:
-            mid = left + (right-left) // 2
+            mid = (right + left)//2
             if nums[mid] >= target:
                 right = mid
             else:
