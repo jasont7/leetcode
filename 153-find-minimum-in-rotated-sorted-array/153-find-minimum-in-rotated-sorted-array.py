@@ -7,4 +7,4 @@ class Solution(object):
                 r = mid
             else:
                 l = mid+1
-        return A[l]
+        return A[l] 
