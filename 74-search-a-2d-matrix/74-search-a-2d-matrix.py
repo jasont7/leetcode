@@ -24,5 +24,5 @@ class Solution(object):
                     return True
             return False
         
-        row = findRow() 
+        row = findRow()
         return searchRow(row) if row else False
