@@ -1,10 +1,10 @@
 # Definition for singly-linked list.
-# class ListNode:
+# class ListNode(object):
 #     def __init__(self, val=0, next=None):
 #         self.val = val
 #         self.next = next
 class Solution:
-    def reorderList(self, head: Optional[ListNode]) -> None:
+    def reorderList(self, head):
         n = 0
         stack = []
         cur = head
@@ -15,7 +15,7 @@ class Solution:
         
         cur = head
         i = 0
-        while i < n//2: 
+        while i < n//2:
             new = stack.pop()
             new.next = cur.next
             cur.next = new
