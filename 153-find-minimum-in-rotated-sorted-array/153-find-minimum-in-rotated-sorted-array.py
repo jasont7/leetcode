@@ -4,7 +4,7 @@ class Solution(object):
         while l < r:
             if l == r-1: return min(A[l], A[r])
             
-            mid = l + (r-l)//2
+            mid = (r+l)//2
             if A[r] > A[mid]:
                 r = mid
             else:
