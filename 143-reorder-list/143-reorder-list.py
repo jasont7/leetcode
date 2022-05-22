@@ -15,7 +15,7 @@ class Solution:
         
         cur = head
         i = 0
-        while i < n//2:
+        while i < n//2: 
             new = stack.pop()
             new.next = cur.next
             cur.next = new
