@@ -3,8 +3,8 @@ class Solution(object):
         l, r = 0, len(A)-1
         while l < r:
             mid = (r+l)//2
-            if A[mid] > A[r]:
-                l = mid+1
-            else:
+            if A[mid] <= A[r]:
                 r = mid
-        return A[l] 
+            else:
+                l = mid+1
+        return A[l]
