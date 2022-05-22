@@ -31,4 +31,4 @@ class Solution(object):
                         right = mid-1
             return -1
         
-        return [getStart(), getEnd()] 
+        return [getStart(), getEnd()]
