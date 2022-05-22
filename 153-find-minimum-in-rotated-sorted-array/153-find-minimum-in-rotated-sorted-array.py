@@ -9,5 +9,4 @@ class Solution(object):
                 r = mid
             else:
                 l = mid
-            print(l, r, mid)
         return A[r]
