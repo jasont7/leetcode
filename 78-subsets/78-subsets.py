@@ -3,4 +3,4 @@ class Solution(object):
         result = [[]]
         for n in nums:
             result += [curr + [n] for curr in result]
-        return result
+        return result 
