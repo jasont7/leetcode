@@ -6,5 +6,5 @@ class Solution(object):
             if A[mid] <= A[r]:
                 r = mid
             else:
-                l = mid+1 
-        return A[l] 
+                l = mid+1
+        return A[l]
