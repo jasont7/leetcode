@@ -5,6 +5,6 @@ class Solution(object):
             mid = (r+l)//2
             if A[mid] <= A[r]:
                 r = mid
-            else: 
+            else:
                 l = mid+1
-        return A[l] 
+        return A[l]
