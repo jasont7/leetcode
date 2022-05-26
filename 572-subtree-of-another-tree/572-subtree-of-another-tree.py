@@ -20,4 +20,4 @@ class Solution(object):
             result = self.sameTree(root, subRoot) 
             
         return True if result else self.isSubtree(root.left, subRoot) or \
-                                   self.isSubtree(root.right, subRoot) 
+                                   self.isSubtree(root.right, subRoot)
