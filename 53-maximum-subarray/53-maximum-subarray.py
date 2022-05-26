@@ -6,4 +6,4 @@ class Solution:
         for i in range(1, len(nums)):
             dp[i] = max(nums[i], nums[i] + dp[i-1])
             maxSum = max(maxSum, dp[i])
-        return maxSum
+        return maxSum 
