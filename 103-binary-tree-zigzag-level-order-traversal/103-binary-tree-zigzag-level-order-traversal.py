@@ -19,7 +19,7 @@ class Solution(object):
             # process level
             for _ in range(len(q)):
                 cur = q.popleft()
-                level.append(cur.val)
+                level.append(cur.val) 
                 
                 if cur.left:  q.append(cur.left)
                 if cur.right: q.append(cur.right)
